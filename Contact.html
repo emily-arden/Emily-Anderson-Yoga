@@ -7,11 +7,14 @@
     <title>Contact Emily</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
-<body style="background-color:floralwhite;">
+<body style="background-color: white">
+  <div class="pricing-header px-4 py-4 pt-md-5 pb-md-3 mx-auto text-left">
+    <h1 class="display-4">Contact Emily</h1>
     
+  </div>
     <div>
         <!--From https://getbootstrap.com/docs/4.4/components/navbar/-->
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:lavenderblush;" style="color: navy;">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color:lavenderblush;" style="color: navy;">
             <a class="navbar-brand" href="index.html">Emily Anderson Yoga</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -27,8 +30,51 @@
             </div>
           </nav>
 
-          <p>I would love to hear from you, whoever you are.  Feel free to grab me after class if you ever want to have a conversation.  Alteratively, you can contact me by email.</p>
-          <a href = "mailto:e.c.r.arden@gmail.com">Email Me</a>
+          <div class="d-md-flex flex-md-equal w-80 my-md-3 pl-md-3">
+            <div class="mr-md-3 pt-3 px-3 pt-md-6 px-md-5 text-left text-grey overflow-hidden" style = "background-color: white;">
+              <div class="my-3 py-3">
+              <p class="lead" style = "color: grey;">I would love to hear from you, whoever you are.  Feel free to grab me after class if you ever want to have a conversation.  </p>
+            
+              <p class="lead" style = "color: grey;">Alteratively, you can contact me below:</p>
+              <ul class="lead" style="color: grey;">
+                <li>
+                  <a id = "Email"  href = "mailto:e.c.r.arden@gmail.com">Email Me</a>
+                </li>
+  
+                <li>
+                  Find me on Instagram - @emilyarden1106
+                </li>
+  
+              </ul></p>
+              
+              
+              </div>
+              
+              </div>                    
+           </div>
+          
+           <footer>© Emily Anderson Yoga</footer>
+           <script>
 
+                
+            var clickCount = 0
+      
+            var myBtn = document.getElementById("Email")
+      
+            // define a click event handler function
+            function myBtnClick() {
+              clickCount = clickCount + 1
+              console.log("YOU HAVE EMAILED EMILY", clickCount, "TIMES! :-)")
+            }
+      
+            // register the click event handler function to the button's click event
+            myBtn.addEventListener("click", myBtnClick, false)
+      
+          </script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+            
 </body>
 </html>
